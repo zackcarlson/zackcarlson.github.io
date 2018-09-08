@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Zack Carlson</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" integrity="sha256-RGlAwHKG24hsj1109SGQgvR+Orx7u8c6zyYH4Tk3ydU=" crossorigin="anonymous"></script>
+  </head>
+  <body class="is-preload">
+    
+    <!-- NAV -->
+    <nav id="navbar">
+      <li><a href="#"><span>About</span></a></li>
+      <li><a href="#"><span>Portfolio</span></a></li>
+      <li><a href="#"><span>Contact</span></a></li>
+      <a href="https://github.com/zackcarlson" target="blank">
+        <span><i class="fab fa-github"></i></span>
+      </a>
+      <a href="https://www.linkedin.com/in/zack-carlson" target="blank">
+        <span><i class="fab fa-linkedin-in"></i></span>
+      </a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+      <!-- HOME -->
+      <section id="About" class="wrapper style1">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-5-large col-12-medium">
+              <span><img src="images/me.jpg" alt="headshot"/></span>
+            </div>
+            <div class="col-8 col-7-large col-12-medium">
+              <header>
+                <h1>Hello, I'm <span class="highlight">Zack Carlson</span>.</h1>
+                <h2>I am a Software Engineer.</h2>
+              </header>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- WORK -->
+      <section id="Portfolio" class="wrapper style2">
+        <div class="container">
+          <header>
+            <h2>Check out my work.</h2>
+          </header>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="Contact" class="wrapper style3">
+        <div class="container medium">
+          <header>
+            <h2>Buy me a cup of Joe.</h2>
+          </header>
+          <div class="form-container">
+            <form>
+              <div class="form-group"> <!-- Name field -->
+                <input class="form-control" id="name" name="name" type="text" placeholder="Name"/>
+              </div>   
+              <div class="form-group"> <!-- Email field -->
+                <input class="form-control" id="email" name="email" type="text" placeholder="Email"/>
+              </div>
+              <div class="form-group"> <!-- Subject field -->
+                <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject"/>
+              </div>
+              <div class="form-group"> <!-- Message field -->
+                <textarea class="form-control" cols="40" id="message" name="message" rows="10" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- PRELOAD IMAGES -->
+    <div id="preload">
+      <img src="images/me.jpg" alt="headshot"/>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
