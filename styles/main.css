@@ -26,8 +26,6 @@ h2 {
 
 img[alt="headshot"] {
   border-radius: 100%;
-  width: 75%;
-  height: 95%;
 }
 
 #preload {
@@ -35,7 +33,7 @@ img[alt="headshot"] {
 }
 
 /* NAV */
-#navbar {
+.topnav {
   overflow: hidden;
   background-color: #3b5998;
   text-align: center;
@@ -43,7 +41,7 @@ img[alt="headshot"] {
   top: 0;
   width: 100%;
 }
-  #navbar a {
+  .topnav a {
     color: white;
     text-align: center;
     font-family: 'Open Sans';
@@ -56,12 +54,12 @@ img[alt="headshot"] {
     position: relative;
   }
 
-  #navbar a:hover {
+  .topnav a:hover {
     background: none;
     color: lightgrey;
   }
 
-  #navbar li {
+  .topnav li {
     float: center;
     display: inline-flex;
     list-style-type: none;
@@ -332,6 +330,7 @@ img[alt="headshot"] {
 
   @media screen and (max-width: 1680px) {
 
+    img[alt="headshot"] { max-width: 100%; height: auto }
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -1066,6 +1065,11 @@ img[alt="headshot"] {
   }
 
   @media screen and (max-width: 736px) {
+
+    img[alt="headshot"] {
+      max-width: 50%;
+      height: auto;
+    }
 
     .row {
       display: flex;
