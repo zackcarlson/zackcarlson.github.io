@@ -71,7 +71,7 @@ img[alt="headshot"] {
 }
 
 /* NAV */
-.topnav {
+#navbar {
   overflow: hidden;
   background-color: #3b5998;
   text-align: center;
@@ -80,7 +80,7 @@ img[alt="headshot"] {
   width: 100%;
   z-index:1;
 }
-  .topnav a {
+  #navbar a {
     color: white;
     text-align: center;
     font-family: 'Open Sans';
@@ -93,12 +93,12 @@ img[alt="headshot"] {
     position: relative;
   }
 
-  .topnav a:hover {
+  #navbar a:hover {
     background: none;
     color: lightgrey;
   }
 
-  .topnav li {
+  #navbar li {
     float: center;
     display: inline-flex;
     list-style-type: none;
