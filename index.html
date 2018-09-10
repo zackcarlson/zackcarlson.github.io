@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel='icon' href='images/favicon.ico' type='image/x-icon'>
     <title>Zack Carlson</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,72 +16,54 @@
   <body class="is-preload">
     
     <!-- NAV -->
-    <nav id="navbar" class="topnav">
-      <li><a href="#"><span>About</span></a></li>
-      <li><a href="#"><span>Portfolio</span></a></li>
-      <li><a href="#"><span>Contact</span></a></li>
-      <a href="https://github.com/zackcarlson" target="blank">
-        <span><i class="fab fa-github"></i></span>
-      </a>
-      <a href="https://www.linkedin.com/in/zack-carlson" target="blank">
-        <span><i class="fab fa-linkedin-in"></i></span>
-      </a>
-    </nav>
+    <div class="nav">
+      <input type="checkbox" id="toggle"/>
+      <label for="toggle">
+        <span class="hamburger-icon"></span>
+      </label>
+      <div class="menu">
+        <a href="#" >About</a>
+        <a href="#" >Portfolio</a>
+        <a href="#">Contact</a>
+        <a href="https://github.com/zackcarlson" 
+          target="blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zack-carlson"
+          target="blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main id="main-content">
 
       <!-- HOME -->
-      <section id="About" class="wrapper style1">
+      <section id="About">
         <div class="container">
-          <div class="row">
-            <div class="col-4 col-5-large col-12-medium">
-              <span class="image fit"><img src="images/me.jpg" alt="headshot"></span>
-            </div>
-            <div class="col-8 col-7-large col-12-medium">
-              <header>
-                <h1>Hello, I'm <span class="highlight">Zack Carlson</span>.</h1>
-                <h2>I am a Software Engineer.</h2>
-              </header>
-            </div>
-          </div>
+          <span class="image fit"><img src="images/me.jpg" alt="headshot"></span>
+          <header>
+            <h1>Hello, I'm <span class="highlight">Zack Carlson</span>.</h1>
+            <h2>I am a Software Engineer.</h2>
+          </header>
         </div>
       </section>
       
       <!-- WORK -->
-      <section id="Portfolio" class="wrapper style2">
+      <section id="Portfolio">
         <div class="container">
           <header>
             <h2>Check out my work.</h2>
           </header>
-
-          <!-- <div class="container" id="apps">
-            <div class="row aln-center">
-             
-              <div class="col-4 col-6-medium col-12-small">
-                <article class="box style2">
-                  <a href="https://sheltered-retreat-50643.herokuapp.com/" target="blank" class="image featured"><img src="images/onesMan.png" /></a>
-                  <h3><a href="https://sheltered-retreat-50643.herokuapp.com/" target="blank">One Man's Treasure</a></h3>
-                  <p>Ornare nulla proin odio consequat.</p>
-                </article>
-              </div>
-
-              <div class="col-4 col-6-medium col-12-small">
-                <article class="box style2">
-                  <a href="https://volunteerrocks.herokuapp.com/" target="blank" class="image featured"><img src="images/volRox1.png" /></a>
-                  <h3><a href="https://volunteerrocks.herokuapp.com/" target="blank">Volunteer Rocks</a></h3>
-                  <p>Ornare nulla proin odio consequat.</p>
-                </article>
-              </div>
-            </div>
-          </div> -->
-
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section id="Contact" class="wrapper style3">
-        <div class="container medium">
+      <section id="Contact">
+        <div class="container">
           <header>
             <h2>Buy me a cup of Joe.</h2>
           </header>
