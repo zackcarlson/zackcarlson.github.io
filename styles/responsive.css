@@ -1,4 +1,10 @@
 @media only screen and (max-width : 500px) {
+  .intro-h1 {
+    font-size: 1.7em;
+  }
+  .intro-h3 {
+    font-size: 1em;
+  }
   .hamburger-icon {
     padding: 0 10px 0 0;
     font-size: 2em;
@@ -28,10 +34,15 @@
     text-align: center;
     width: 100%;
   }
+  .menu > li {
+    width: 100%;
+    display: block;
+    border-top: 1px solid #f7f7f7;
+  }
   .menu a {
     display: block;
-    border-bottom: 1px solid #f7f7f7;
-    margin: 0;
+    margin-left: 120px;
+    margin-right: 120px;
   }
   #toggle:checked ~ .menu {
     display: block;
@@ -46,7 +57,6 @@
     display: block;
     margin-left: 10px;
   }
-  
 }
 
 /* Smartphones (portrait and landscape) ----------- */
