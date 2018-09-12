@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/zackcarlson/zackcarlson.github.io#readme",
   "dependencies": {
+    "autoprefixer": "^9.1.5",
     "jquery": "^3.3.1",
-    "jquery-scrollify": "^1.0.19"
+    "jquery-scrollify": "^1.0.19",
+    "postcss-cli": "^6.0.0"
   }
 }
