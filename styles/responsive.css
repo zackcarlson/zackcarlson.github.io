@@ -60,6 +60,9 @@
   .nav {
     z-index: 2;
   }
+  .btn-primary {
+    width: 100%!important;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
