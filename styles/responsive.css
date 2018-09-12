@@ -57,6 +57,9 @@
     display: block;
     margin-left: 10px;
   }
+  .nav {
+    z-index: 2;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
