@@ -93,6 +93,16 @@ input[id="subject"]:focus {
   margin-bottom: 8px;
 }
 
+.btn-primary {
+  background-color: #3b5998!important;
+  border: 1px solid #3b5998!important;
+}
+
+.btn-primary:hover {
+  background-color: #4f70b5!important;
+  border: 1px solid #4f70b5!important;
+}
+
 img, embed, object, video {
   max-width: 100%;
 }
