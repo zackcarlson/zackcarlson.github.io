@@ -51,27 +51,31 @@ header {
   font-weight: bold;
 }
 
-i[alt="name_icon"] {
-  float: left;
-  width: 25%;
+.form-control {
+  position: relative;
+}
+
+.input-group {
+  margin-bottom: 8px;
 }
 
 textarea[id="message"],
 input[id="name"],
 input[id="email"],
 input[id="subject"] {
-  width: 75%;
-  border-color: transparent;
+  width: 100%;
+  border: 1px solid #dfe3ee;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
-  border-radius: 0%;
   outline: none;
+  box-sizing: border-box;
+  transition: .3s;
 }
 
 textarea[id="message"]:focus,
 input[id="name"]:focus,
 input[id="email"]:focus,
 input[id="subject"]:focus {
-  border-color: transparent;
+  border-color: dodgerblue;
   outline: none;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
 }
