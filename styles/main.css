@@ -73,6 +73,7 @@ input[id="subject"] {
   width: 100%;
   border: 1px solid #dfe3ee;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
   outline: none;
   box-sizing: border-box;
   transition: .3s;
