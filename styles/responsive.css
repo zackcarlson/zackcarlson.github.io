@@ -1,4 +1,12 @@
 @media only screen and (max-width : 500px) {
+  h1, h2, h3, #About {
+    text-align: center;
+  }
+
+  .application-container {
+    display: inline-block;
+  }
+
   .intro-h1 {
     font-size: 1.7em;
   }
@@ -59,6 +67,12 @@
   }
   .nav {
     z-index: 2;
+  }
+  .col-sm {
+    margin-bottom: 40px;
+  }
+  .btn-dark, .btn-light {
+    /* font-size: 20px!important; */
   }
   .btn-primary {
     width: 100%!important;
