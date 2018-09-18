@@ -1,53 +1,48 @@
-html, body, .nav {
+html, body {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
+  font-family: sans-serif;
+  padding: 0;
 }
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+nav a {
+  margin: 0 5px;
 }
 
-.menu li a {
-  text-decoration: none;
+nav a, a:focus {
+  text-decoration: none!important;
+  font-family: 'Open Sans';
+  font-size: 15px;
   color: white;
-  margin: 0 10px;
-  cursor: pointer;
-}
+} 
 
-.menu a:focus {
-  color: white;
-}
-
-.menu a:hover {
+nav a:hover {
   color: lightgrey;
 }
 
-.menu {
-  margin: 0 30px 0 0;
-}
-
-.hamburger {
-  margin: 0 20px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  display: none;
-}
-
-#toggle {
-  display: none;
-}
-
-.nav {
+nav {
   background-color: #3B5998;
+  width: 100%;
   line-height: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
+  top: 0;
   position: fixed;
-  text-align: right;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
 }
 
 header {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 
 .highlight {
@@ -55,118 +50,72 @@ header {
   font-weight: bold;
 }
 
-.application-container {
-  background-color: #f0f0f0;
-  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-}
-
-.col-sm {
-  position: relative;
-  display: inline-block;
-}
-
-.image {
-  display: block;
-}
-
-.btn-dark {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  font-family: sans-serif;
-}
-
-.btn-light {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  right: 18%;
-  transform: translate(-50%, -50%);
-  font-family: sans-serif;
-}
-
-.overlayFade{
-  height: 100%;
-  width:100%;
-  top:0;
-  left:0;
-  background-color: #ff946bbd;
-}
-
-.overlay {
-  position: absolute;
-  opacity: 0;
-  transition:all .3s ease;
-  background-color: rgba(145, 168, 192, 0.801);
-}
-
-.col-sm:hover .overlay,.col-sm:hover .overlayFade {
-  opacity: 1;
-}
-
-.form-control {
-  position: relative;
-}
-
-.input-group-addon {
-  background-color: transparent!important;
-  border: 1px solid #dfe3ee!important;
-  border-right: transparent!important;
-}
-
-input[id="name"],
-input[id="email"] {
-  z-index: 0!important;
-}
-
-textarea[id="message"],
-input[id="name"],
-input[id="email"],
-input[id="subject"] {
-  width: 100%;
-  border: 1px solid #dfe3ee;
-  box-shadow: none !important;
-  -webkit-appearance: none;
-  outline: none;
-  box-sizing: border-box;
-  transition: .3s;
-}
-
-textarea[id="message"]:focus,
-input[id="name"]:focus,
-input[id="email"]:focus,
-input[id="subject"]:focus {
-  border-color: dodgerblue;
-  outline: none;
-  -webkit-appearance: none;
-  box-shadow: none !important;
-}
-
-.input-group {
-  margin-bottom: 8px;
-}
-
-.btn-primary {
-  background-color: #3b5998!important;
-  border: 1px solid #3b5998!important;
-}
-
-.btn-primary:hover {
-  background-color: #4f70b5!important;
-  border: 1px solid #4f70b5!important;
-}
-
 img, embed, object, video {
   max-width: 100%;
 }
 
 img[alt="headshot"] {
-  margin-top: 100px;
+  margin-top: 80px;
   border-radius: 100%;
+}
+
+#About {
+  background-color: white;
+  width: auto;
+  height: 100vh;
+}
+
+#Portfolio {
+  background-color: #f7f7f7;
+  -webkit-box-shadow: inset 0px 0.2px 0.5px 0px rgb(31, 31, 31);
+  -moz-box-shadow: inset 0px 0.2px 0.5px 0px rgb(31, 31, 31);
+  box-shadow: inset 0px 0.2px 0.5px 0px rgb(31, 31, 31);
+  padding: 1%;
+  min-height: 90vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.app-item {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+a.button {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #8b9dc3;
+  color: black;
+  cursor: pointer;
+  margin: 1%;
+  width: 25%;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  padding: 0.5%;
+}
+
+a.button:hover {
+  background: #8b9dc3;
+  color: white;
+  text-decoration: none;
+}
+
+a.button:focus {
+  text-decoration: none;
+}
+
+a.button:active { color: white; }
+
+#Footer {
+  padding: 1%;
+  width: 100%;
+  background: black;
+}
+
+#Footer .container ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
 }
 
 #preload {
