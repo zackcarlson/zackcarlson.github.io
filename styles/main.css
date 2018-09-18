@@ -6,6 +6,10 @@ html, body {
   padding: 0;
 }
 
+body {
+  text-align: center!important;
+}
+
 nav a {
   margin: 0 5px;
 }
