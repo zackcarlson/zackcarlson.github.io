@@ -46,7 +46,7 @@
 /* Half width of header in about section */
 /* Increase font of about section for larger screens */
 /* Make about section a flex container */
-@media only screen and (min-width: 750px)  {
+@media only screen and (min-width: 450px)  {
   .header-intro {
     width: 50%;
   }
