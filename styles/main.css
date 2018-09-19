@@ -120,6 +120,12 @@ a.button:active { color: white; }
   text-decoration: none;
   list-style: none;
   display: inline-flex;
+  text-align: center;
+  padding: 1em 2em 0 0;
+}
+
+#Footer .container ul li a {
+  color: white;
 }
 
 #preload {
