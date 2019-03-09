@@ -6,32 +6,48 @@
     <link rel='icon' href='images/favicon.ico' type='image/x-icon'>
     <title>Zack Carlson</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
-  <body class="is-preload">
-    
-    <!-- NAV -->
-    <nav class="nav">
-      <ul>
-        <li>
-          <a href="#">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
+  <body>
     <!-- MAIN CONTENT -->
-    <main id="main-content">
+    <main class="main-content">
 
+      <!-- INTRO -->
+      <header class="intro">
+        <div class="container">
+
+          <div class="row">
+            <div class="col">
+              <h1 class="intro__welcome">
+                Zack Carlson <span class="emoji-nerd">🤓</span>
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1 class="intro__about">
+                I am a front-end software engineer focused on building pretty things. 👨‍💻
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3 class="intro__contact">
+                <span>Buy me a coffee</span>
+                <span class="emoji-coffee">☕</span>
+                <span><a href="mailto:zackt.carlson@gmail.com" class="email" target="_blank">zackt.carlson@gmail.com</a></span>
+              </h3>
+            </div>
+          </div>
+
+        </div>
+      </header>
       <!-- HOME -->
-      <section id="About">
-        <div class="container" id="about-container">
-          <span class="image fit">
+      <section class="about">
+        <div class="container">
+          <!-- <span class="image fit">
             <img
               srcset="images/me_small.jpg 320w, images/me_large.jpg 799w"
               sizes="(max-width: 499px) 75vw, (min-width: 500px) 30vw"
@@ -43,14 +59,14 @@
             <h1 class="intro-h1">Hello, I'm <span class="highlight">Zack Carlson</span>.</h1>
             <h3 class="intro-h3">And I am a web developer with an interest in front-end design.</h3>
             <h4 class="contact"></h4>
-          </header>
+          </header> -->
         </div>
       </section>
       
       <!-- WORK -->
-      <section id="Portfolio">
+      <section class="portfolio">
         <div class="container application-container">
-          <header>
+          <!-- <header>
             <h2>Check out my work.</h2>
           </header>
           <div class="applications">
@@ -74,52 +90,42 @@
             </div>
             <a class="button" href="https://github.com/zackcarlson/one-mans-treasure" target="blank">Code</a>
             <a class="button" href="https://sheltered-retreat-50643.herokuapp.com/" target="blank">Demo</a>
-          </div>
+          </div> -->
         </div>
       </section>
+
+      <!-- FOOTER -->
+      <section class="footer">
+        <div class="container">
+          <ul>
+            <li class="github">
+              <a href="https://github.com/zackcarlson" target="blank">
+                <i class="fab fa-github"></i>
+                <span class="github-text">Github</span>
+              </a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/zack-carlson" target="blank">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="linkedin-text">LinkedIn</span>
+              </a>
+            </li>
+            <li class="mail">
+              <a href="mailto:zackt.carlson@gmail.com" target="blank">
+                <i class="fas fa-at"></i>
+                <span class="email-text">Email</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </main>
-
-    <!-- FOOTER -->
-    <section id="Footer">
-      <div class="container">
-        <ul>
-          <li class="github"><a href="https://github.com/zackcarlson" 
-            target="blank"
-          >
-            <i class="fab fa-github"></i>
-          </a></li>
-          <li class="linkedin"><a href="https://www.linkedin.com/in/zack-carlson"
-            target="blank"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PRELOAD IMAGES -->
-    <div id="preload">
-      <img
-        srcset="images/me_small.jpg 320w, images/me_large.jpg 799w"
-        sizes="(max-width: 499px) 75vw, (min-width: 500px) 30vw"
-        src="images/me_large.jpg"
-        alt="headshot"
-      >
-      <img
-        srcset="images/volRox_small.png 1024w, images/volRox_large.png 2560w"
-        sizes="(max-width: 1024px) 100vw, (max-width: 2560px) 45vw"
-        src="images/volRox_large.png"
-        alt="volRox"
-      >
-      <img
-        srcset="images/onesMan_small.png 1023w, images/onesMan_large.png 2558w"
-        sizes="(max-width: 1024px) 100vw, (max-width: 2558px) 45vw"
-        src="images/onesMan_large.png"
-        alt="onesMan"
-      >
-    </div>
     
     <!-- SCRIPTS -->
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
