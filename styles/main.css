@@ -49,6 +49,70 @@
   color: gold;
 }
 
+.application__header {
+  color: rgb(171, 119, 219);
+  text-transform: uppercase;
+  text-align: right;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+
+form > button {
+  position: relative;
+}
+
+form > button:after {  
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: gold;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+form > button:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.application__header {
+  
+}
+
+.application__code, .application__demo {
+  display: inline-block;
+}
+
+.application__code, .application__demo, .application__description {
+  text-align: right;
+}
+
+.application__description > span {
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  padding: .3rem;
+}
+
+.application__demo__btn, .application__code__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.application__description {
+  font-family: 'Muli', sans-serif;
+  font-weight: lighter;
+}
+.application__demo__btn {
+  font-weight: bolder;
+}
+
+.application__demo__btn:focus, .application__code__btn:focus {
+  outline:0;
+}
+
 .email {
   border-bottom: 3px solid rgb(171, 119, 219);
 }
@@ -104,7 +168,7 @@ ul {
   padding: 20px;
 }
 
-i {
+a > i {
   display: inline;
   color: rgb(171, 119, 219);
 }
@@ -221,7 +285,7 @@ i {
     display: inline;
     font-size: 2rem;
   }
-  i {
+  a > i {
     display: none!important;
   }
 }
@@ -264,9 +328,29 @@ i {
     display: inline;
     font-size: 1rem;
   }
-  i {
+  a > i {
     display: none!important;
   }
+  .application__header {
+    font-size: 4rem;
+    text-align: left;
+  }
+  .application__code {
+    font-size: 1.5rem;
+  }
+  .application__demo {
+    font-size: 1.3rem;
+  }
+  .application__description > span {
+    margin: .5rem;
+    display: inline-block;
+  }
+  .app {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 20px;
+    margin-bottom: 4rem;
+  }
+
 }
 
 /* 
@@ -307,8 +391,43 @@ i {
     display: inline;
     font-size: 1.9rem;
   }
-  i {
+  a > i {
     display: none!important;
+  }
+  .application__header {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+  .application__code {
+    font-size: 1.7rem;
+  }
+  .application__demo {
+    font-size: 1.7rem;
+  }
+  .application__description > span {
+    display:inline-block; 
+    margin: .4rem;
+  }
+  .application__description > p {
+    font-size: 1.2rem;
+  }
+  .application-container > .container > .row > .col {
+    margin-left: 2.3rem;
+    padding: 0px!important;
+  }
+
+  .app {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 20px;
+    margin-bottom: 4rem;
+  }
+
+  .app > .row > .text-right {
+    padding-left: 0px!important;
+  }
+
+  form > button {
+    padding: 0px;
   }
 }
 
@@ -346,6 +465,31 @@ i {
     margin-right: 35px;
     font-size: 2rem;
   }
+  .application__header {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .application__code {
+    font-size: 1.7rem;
+  }
+  .application__demo {
+    font-size: 1.7rem;
+  }
+  .application__description > span {
+    display:inline-block; 
+    margin: .4rem;
+  }
+  .application__description > p {
+    font-size: 1.2rem;
+  }
+  .application-container > .container > .row > .col {
+    margin-left: 2.3rem;
+  }
+  .app {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 20px;
+    margin-bottom: 4rem;
+  }
 }
 
 /* 
@@ -381,6 +525,34 @@ i {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.5rem;
+  }
+  .application__header {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .application__code {
+    font-size: 1.7rem;
+  }
+  .application__demo {
+    font-size: 1.7rem;
+  }
+  .application__description > span {
+    display:inline-block; 
+    margin: .4rem;
+  }
+  .application__description > p {
+    font-size: 1.2rem;
+  }
+  .application-container > .container > .row > .col {
+    margin-left: 2.3rem;
+  }
+  .app {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 20px;
+    margin-bottom: 4rem;
+  }
+  form > button {
+    padding: 0px!important;
   }
 }
 
@@ -448,5 +620,39 @@ i {
     margin-left: 35px;
     margin-right: 35px;
     font-size: 1rem;
+  }
+  .application__header {
+    font-size: .8rem;
+    text-align: left;
+  }
+  .application__code {
+    font-size: .7rem;
+    display: inline;
+  }
+  .application__demo {
+    font-size: .7rem;
+    display: inline;
+  }
+  .application__description > span {
+    display:inline-block; 
+    margin: auto;
+    padding: 2px;
+    font-size: .5rem;
+  }
+  .application__description > p {
+    font-size: .5rem;
+  }
+  .application-container > .container > .row > .col {
+    margin-left: 1rem;
+  }
+  .app {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 30px;
+    margin-bottom: 2rem;
+    width: 130%;
+  }
+  form > button {
+    padding: 0px!important;
+    width: 200%;
   }
 }
