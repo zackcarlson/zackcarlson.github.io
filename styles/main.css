@@ -49,7 +49,7 @@
   color: gold;
 }
 
-.application__header {
+.portfolio__title {
   color: rgb(171, 119, 219);
   text-transform: uppercase;
   text-align: right;
@@ -57,29 +57,8 @@
   font-weight: bold;
 }
 
-form > button {
-  position: relative;
-}
-
-form > button:after {  
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: gold;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-form > button:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-.application__header {
-  
+form > button:hover { 
+  color: goldenrod;
 }
 
 .application__code, .application__demo {
@@ -288,6 +267,36 @@ a > i {
   a > i {
     display: none!important;
   }
+  .portfolio {
+    display: flex;
+  }
+  .portfolio__title {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+  .application__code {
+    font-size: 1.5rem;
+  }
+  .application__demo {
+    font-size: 1.3rem;
+  }
+  .application__description {
+    margin-left: 3rem;
+  }
+  .application__description > span {
+    margin: .5rem;
+    display: inline-block;
+  }
+  .application {
+    border-right: 2px solid rgb(171, 119, 219);
+    padding-right: 20px;
+    margin-bottom: 4rem;
+    max-width: 650px;
+  }
+  .application__demo {
+    width: 93%;
+  }
 }
 
 /* 
@@ -331,9 +340,13 @@ a > i {
   a > i {
     display: none!important;
   }
-  .application__header {
+  .portfolio {
+    display: flex;
+  }
+  .portfolio__title {
     font-size: 4rem;
     text-align: left;
+    margin-left: 1.5rem;
   }
   .application__code {
     font-size: 1.5rem;
@@ -341,14 +354,21 @@ a > i {
   .application__demo {
     font-size: 1.3rem;
   }
+  .application__description {
+    margin-left: 3rem;
+  }
   .application__description > span {
     margin: .5rem;
     display: inline-block;
   }
-  .app {
+  .application {
     border-right: 2px solid rgb(171, 119, 219);
     padding-right: 20px;
     margin-bottom: 4rem;
+    max-width: 650px;
+  }
+  .application__demo {
+    width: 93%;
   }
 
 }
@@ -389,20 +409,31 @@ a > i {
   }
   .github-text, .linkedin-text, .email-text {
     display: inline;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
   a > i {
     display: none!important;
   }
-  .application__header {
-    font-size: 2.6rem;
-    text-align: left;
+  .portfolio__title {
+    display: none;
+  }
+  .portfolio__content::before {
+    content: 'Applications';
+    font-size: 3rem;
+    color: rgb(171, 119, 219);
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
   }
   .application__code {
     font-size: 1.7rem;
   }
   .application__demo {
     font-size: 1.7rem;
+  }
+  .application__description {
+    margin-left: 3rem;
   }
   .application__description > span {
     display:inline-block; 
@@ -411,23 +442,21 @@ a > i {
   .application__description > p {
     font-size: 1.2rem;
   }
-  .application-container > .container > .row > .col {
-    margin-left: 2.3rem;
-    padding: 0px!important;
-  }
-
-  .app {
+  .application {
     border-right: 2px solid rgb(171, 119, 219);
     padding-right: 20px;
-    margin-bottom: 4rem;
+    max-width: 650px;
+    margin-top: 3.4rem;
+    margin-left: 30px;
   }
-
-  .app > .row > .text-right {
-    padding-left: 0px!important;
+  .application__demo {
+    width: 93%;
   }
-
   form > button {
-    padding: 0px;
+    padding: 5px;
+  }
+  .footer {
+    margin-top: 3rem;
   }
 }
 
@@ -465,15 +494,26 @@ a > i {
     margin-right: 35px;
     font-size: 2rem;
   }
-  .application__header {
+  .portfolio__title {
+    display: none;
+  }
+  .portfolio__content::before {
+    content: 'Applications';
     font-size: 3rem;
-    text-align: left;
+    color: rgb(171, 119, 219);
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin-left: 200px;
   }
   .application__code {
     font-size: 1.7rem;
   }
   .application__demo {
     font-size: 1.7rem;
+  }
+  .application__description {
+    margin-left: 3rem;
   }
   .application__description > span {
     display:inline-block; 
@@ -482,13 +522,21 @@ a > i {
   .application__description > p {
     font-size: 1.2rem;
   }
-  .application-container > .container > .row > .col {
-    margin-left: 2.3rem;
-  }
-  .app {
+  .application {
     border-right: 2px solid rgb(171, 119, 219);
     padding-right: 20px;
-    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-top: 4rem;
+    margin-left: 60px;
+  }
+  .application__demo {
+    width: 93%;
+  }
+  form > button {
+    padding: 5px;
+  }
+  .footer {
+    margin-top: 3rem;
   }
 }
 
@@ -526,33 +574,46 @@ a > i {
     margin-right: 10px;
     font-size: 1.5rem;
   }
-  .application__header {
+  .portfolio__title {
+    display: none;
+  }
+  .portfolio__content::before {
+    content: 'Applications';
     font-size: 2rem;
-    text-align: left;
+    color: rgb(171, 119, 219);
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin-left: 7rem;
   }
   .application__code {
-    font-size: 1.7rem;
+    font-size: 1rem;
+    float: right;
+  }
+  .application__demo > form > button { 
+    margin-left: 13rem;
   }
   .application__demo {
-    font-size: 1.7rem;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 50px;
   }
   .application__description > span {
     display:inline-block; 
-    margin: .4rem;
+    margin: auto;
+    padding: 4px;
+    font-size: .7rem;
   }
   .application__description > p {
-    font-size: 1.2rem;
+    font-size: .9rem;
+    margin-left: 5rem;
   }
-  .application-container > .container > .row > .col {
-    margin-left: 2.3rem;
-  }
-  .app {
+  .application {
     border-right: 2px solid rgb(171, 119, 219);
-    padding-right: 20px;
-    margin-bottom: 4rem;
-  }
-  form > button {
-    padding: 0px!important;
+    padding-right: 30px;
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-top: 1rem;
   }
 }
 
@@ -621,38 +682,44 @@ a > i {
     margin-right: 35px;
     font-size: 1rem;
   }
-  .application__header {
-    font-size: .8rem;
-    text-align: left;
+  .portfolio__title {
+    display: none;
+  }
+  .portfolio__content::before {
+    content: 'Applications';
+    font-size: 2rem;
+    color: rgb(171, 119, 219);
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin-left: 2rem;
   }
   .application__code {
-    font-size: .7rem;
-    display: inline;
+    font-size: 1rem;
+    float: right;
   }
   .application__demo {
-    font-size: .7rem;
-    display: inline;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 50px;
+  }
+  .application__description {
+    margin-left: 30px;
   }
   .application__description > span {
     display:inline-block; 
-    margin: auto;
-    padding: 2px;
-    font-size: .5rem;
+    margin: 2px auto;
+    padding: 3px;
+    font-size: .8rem;
   }
   .application__description > p {
-    font-size: .5rem;
+    font-size: .8rem;
   }
-  .application-container > .container > .row > .col {
-    margin-left: 1rem;
-  }
-  .app {
+  .application {
     border-right: 2px solid rgb(171, 119, 219);
     padding-right: 30px;
     margin-bottom: 2rem;
-    width: 130%;
-  }
-  form > button {
-    padding: 0px!important;
-    width: 200%;
+    width: 90%;
+    margin-top: 1rem;
   }
 }
