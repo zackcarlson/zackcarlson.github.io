@@ -7,6 +7,20 @@
   background-color: white;
   padding: 0.4rem 1rem;
   font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s, box-shadow 0.6s;
+}
+
+.--hidden {
+  top: -100px;
+}
+
+.--boxshadow {
+  -webkit-box-shadow: 0px 1px 4px #999;
+  -moz-box-shadow: 0px 1px 4px #999;
+  box-shadow: 0px 1px 4px #999;
 }
 
 .Nav--links {
@@ -22,32 +36,36 @@
 }
 
 .Nav--logo {
+  cursor: pointer;
   margin-left: 0.5rem;
 }
 
 .resume {
-  color: #93af93;
-  border: 1px solid #93af93;
+  color: #6b806b;
+  border: 2px solid #6b806b;
+  background-color: white;
   border-radius: 3px;
   margin-left: 1rem;
   margin-right: 1rem;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  transition-property: color, background-color;
+  -webkit-transition: color 250ms ease-in-out,
+    background-color 250ms ease-in-out, border 250ms ease-in-out;
+  -moz-transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
+  -o-transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
 }
 
 .resume:hover {
-  background-color: #93af9352;
   color: white;
+  background-color: hsl(50, 58%, 78%);
+  border: 2px solid #c2b889;
 }
 
-svg#zack-logo {
-  cursor: pointer;
-  fill: transparent;
+svg#zack-logo path {
   transition: 250ms ease-in-out;
 }
-svg#zack-logo:hover {
-  fill: #93af9352;
+svg#zack-logo:hover > path {
+  fill: #e7dca5;
 }
