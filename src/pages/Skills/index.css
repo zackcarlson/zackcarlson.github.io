@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .Skills--title {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 2.5rem;
+  margin: 1rem 0 1rem 0;
   line-height: 34px;
   color: #ddd29d;
 }
@@ -20,7 +22,7 @@
   font-size: 17px;
   line-height: 23px;
   text-align: center;
-  color: #2b2b2b;
+  color: white;
   margin-bottom: 3em;
 }
 
@@ -29,18 +31,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   list-style: none;
+  grid-gap: 1rem;
 }
 
-img {
-  width: 70px;
-  height: 70px;
-  margin: 2em;
-  display: inline-block;
-  padding: 15px;
-  line-height: 100%;
+.Skills--tech-wrapper {
   -moz-border-radius: 50%;
   border-radius: 50%;
+  border: 2px solid #6b806b;
   background-color: #2b2b2b;
-  text-align: center;
-  font-size: 1em;
 }

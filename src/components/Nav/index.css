@@ -4,13 +4,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: rgb(56, 56, 56);
   padding: 0.4rem 1rem;
   font-family: "Open Sans", sans-serif;
   text-transform: lowercase;
   position: fixed;
   top: 0;
   transition: top 0.6s, box-shadow 0.6s;
+  z-index: 10000000;
 }
 
 .--hidden {
@@ -18,9 +19,9 @@
 }
 
 .--boxshadow {
-  -webkit-box-shadow: 0px 1px 4px #999;
-  -moz-box-shadow: 0px 1px 4px #999;
-  box-shadow: 0px 1px 4px #999;
+  -webkit-box-shadow: 0px 1px 4px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 1px 4px rgb(0, 0, 0);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0);
 }
 
 .Nav--links {
@@ -33,6 +34,7 @@
   padding: 0.5rem;
   font-size: 0.9rem;
   cursor: pointer;
+  color: white;
 }
 
 .Nav--logo {
@@ -43,7 +45,7 @@
 .resume {
   color: #6b806b;
   border: 2px solid #6b806b;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 3px;
   margin-left: 1rem;
   margin-right: 1rem;

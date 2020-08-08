@@ -6,4 +6,5 @@ body {
   box-sizing: border-box;
 }
 .App--container {
+  background-color: rgb(56, 56, 56);
 }

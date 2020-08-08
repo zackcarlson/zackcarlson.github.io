@@ -1,17 +1,26 @@
 import React from "react";
 import "./index.css";
-import angular from "../../assets/images/angular.svg";
-import bootstrap from "../../assets/images/bootstrap.svg";
-import css3 from "../../assets/images/css3.svg";
-import html5 from "../../assets/images/html5.svg";
-import javascript from "../../assets/images/javascript.svg";
-import jquery from "../../assets/images/jquery.svg";
-import materialize from "../../assets/images/materialize.svg";
-import node from "../../assets/images/node.svg";
-import react from "../../assets/images/react.svg";
-import redux from "../../assets/images/redux.svg";
-import sass from "../../assets/images/sass.svg";
-import typescript from "../../assets/images/typescript.svg";
+import { Angular } from "@styled-icons/fa-brands/Angular";
+import { Bootstrap } from "@styled-icons/boxicons-logos/Bootstrap";
+import { LogoCss3 } from "@styled-icons/ionicons-solid/LogoCss3";
+import { Html5 } from "@styled-icons/fa-brands/Html5";
+import { Javascript } from "@styled-icons/simple-icons/Javascript";
+import { Jquery } from "@styled-icons/simple-icons/Jquery";
+import { DiMaterializecss } from "react-icons/di";
+import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
+import { ReactLogo } from "@styled-icons/fa-brands/ReactLogo";
+import { Redux } from "@styled-icons/simple-icons/Redux";
+import { Sass } from "@styled-icons/boxicons-logos/Sass";
+import { Typescript } from "@styled-icons/simple-icons/Typescript";
+import styled from "styled-components";
+import { StyledIconBase } from "@styled-icons/styled-icon";
+
+export const IconStyleWrapper = styled.div`
+  ${StyledIconBase} {
+    color: #d0d0d0;
+    padding: 15px;
+  }
+`;
 
 export const Skills = () => {
   const techNames = [
@@ -29,18 +38,23 @@ export const Skills = () => {
     "typescript",
   ];
   const techLogos = [
-    angular,
-    bootstrap,
-    css3,
-    html5,
-    javascript,
-    jquery,
-    materialize,
-    node,
-    react,
-    redux,
-    sass,
-    typescript,
+    <Angular key="Angular0" size="70" />,
+    <Bootstrap key="Bootstrap1" size="70" />,
+    <LogoCss3 key="LogoCss32" size="70" />,
+    <Html5 key="Html53" size="70" />,
+    <Javascript key="Javascript4" size="70" />,
+    <Jquery key="Jquery5" size="70" />,
+    <DiMaterializecss
+      key="DiMaterializecss6"
+      size="70"
+      color="#d0d0d0"
+      className="Skills--tech"
+    />,
+    <Nodejs key="Nodejs7" size="70" />,
+    <ReactLogo key="ReactLogo8" size="70" />,
+    <Redux key="Redux9" size="70" />,
+    <Sass key="Sass10" size="70" />,
+    <Typescript key="Typescript11" size="70" />,
   ];
   return (
     <div className="Skills--container">
@@ -50,8 +64,14 @@ export const Skills = () => {
       </div>
       <ul className="Skills--techList">
         {techNames.map((name, i) => (
-          <li key={`${i} ${name}`} title={name}>
-            <img src={techLogos[i]} alt={name} />
+          <li
+            key={`${i} ${name}`}
+            title={name}
+            className="Skills--tech-wrapper"
+          >
+            <IconStyleWrapper>{techLogos[i]}</IconStyleWrapper>
+
+            {/* <img src={techLogos[i]} alt={name} className="Skills--tech" /> */}
           </li>
         ))}
       </ul>

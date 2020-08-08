@@ -1,0 +1,114 @@
+.Landing--container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.Landing--intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.Landing--intro > h1 {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  color: #e7dca5;
+}
+
+.Landing--intro > h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  text-transform: lowercase;
+  color: white;
+}
+
+p.Landing--details {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #848484;
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+.Landing--cartoon-wrapper {
+  display: flex;
+  padding: 3rem;
+}
+
+.Landing--cartoon {
+  width: 100%;
+}
+
+.Landing--icons {
+  margin-top: 2rem;
+}
+
+.Landing--icon > svg {
+  fill: #93af93;
+  transition: 250ms ease-in-out;
+}
+
+.Landing--icon > svg:hover {
+  fill: hsl(50, 58%, 78%);
+}
+
+.Landing--icon {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1281px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+  .Landing--intro > h1 {
+    font-size: 2.5rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Landing--intro > h1 {
+    font-size: 3.4rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Landing--intro > h1 {
+    font-size: 3.2rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 1.7rem;
+  }
+}
