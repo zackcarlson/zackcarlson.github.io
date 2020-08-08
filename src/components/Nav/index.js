@@ -1,39 +1,68 @@
-import React from "react";
-import logo from "../../assets/images/zack-logo.svg";
+import React, { Component } from "react";
+import classnames from "classnames";
 import "./index.css";
 
-export const Nav = () => {
-  return (
-    <div className="Nav--container">
-      <span className="Nav--logo">
-        <svg
-          width="50"
-          height="50"
-          viewBox="0 0 296 294"
-          xmlns="http://www.w3.org/2000/svg"
-          id="zack-logo"
-        >
-          <path
-            d="M165.641 100.594V99.1094L150.875 99.6562H105.406L107.75 87.5469H182.906V94.1875L128.141 179.109L120.563 188.953V190.516L135.25 189.891H187.828L185.484 202H102.828V195.984L158.063 110.516L165.641 100.594Z"
-            fill="#93AF93"
-          />
-          <rect
-            x="0.0862267"
-            y="4.94001"
-            width="199.902"
-            height="201.383"
-            rx="41.5"
-            transform="matrix(0.720598 0.693353 -0.695962 0.718079 149.396 2.24172)"
-            stroke="#93AF93"
-            stroke-width="7"
-          />
-        </svg>
-      </span>
-      <span className="Nav--links">
-        <span className="Nav--linkItem">Skills</span>
-        <span className="Nav--linkItem">Projects</span>
-        <span className="Nav--linkItem resume">Resume</span>
-      </span>
-    </div>
-  );
-};
+export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      prevScrollpos: window.pageYOffset,
+      visible: true,
+    };
+  }
+
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  // Remove the event listener when the component is unmount.
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  // Hide or show the menu.
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible,
+    });
+  };
+
+  render() {
+    return (
+      <div
+        className={classnames("Nav--container", {
+          "--hidden": !this.state.visible,
+          "--boxshadow": this.state.prevScrollpos > 0 && this.state.visible,
+        })}
+      >
+        <span className="Nav--logo">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 175 146"
+            xmlns="http://www.w3.org/2000/svg"
+            id="zack-logo"
+          >
+            <path
+              d="M0.25 145.031V0.96875H42.5156V15.4219H14.625V130.578H42.5156V145.031H0.25ZM51.5781 107.062L84.3906 56.9062L92.3594 46.3594V44.7969L77.8281 45.3438H54L57.5938 30.1875H120.719V36.125L87.9062 85.9688L79.7031 96.9844V98.4688L93.5312 97.8438H122.984L119.391 113H51.5781V107.062ZM132.203 130.578H160.016V15.4219H132.203V0.96875H174.391V145.031H132.203V130.578Z"
+              fill="#93AF93"
+            />
+          </svg>
+        </span>
+        <span className="Nav--links">
+          <span className="Nav--linkItem">Skills</span>
+          <span className="Nav--linkItem">Projects</span>
+          <span className="Nav--linkItem resume">Resume</span>
+        </span>
+      </div>
+    );
+  }
+}
