@@ -1,10 +1,10 @@
-.skillsPage {
+.Skills--container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title {
+.Skills--title {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -13,7 +13,7 @@
   color: #ddd29d;
 }
 
-.subtitle {
+.Skills--subtitle {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
@@ -24,7 +24,7 @@
   margin-bottom: 3em;
 }
 
-.techList {
+.Skills--techList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;

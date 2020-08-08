@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css';
+import "./index.css";
 import angular from "../../assets/images/angular.svg";
 import bootstrap from "../../assets/images/bootstrap.svg";
 import css3 from "../../assets/images/css3.svg";
@@ -14,13 +14,41 @@ import sass from "../../assets/images/sass.svg";
 import typescript from "../../assets/images/typescript.svg";
 
 export const Skills = () => {
-  const techNames = ["angular", "bootstrap", "css3", "html5", "javascript", "jquery", "materialize", "node", "react", "redux", "sass", "typescript"];
-  const techLogos = [angular, bootstrap, css3, html5, javascript, jquery, materialize, node, react, redux, sass, typescript];
+  const techNames = [
+    "angular",
+    "bootstrap",
+    "css3",
+    "html5",
+    "javascript",
+    "jquery",
+    "materialize",
+    "node",
+    "react",
+    "redux",
+    "sass",
+    "typescript",
+  ];
+  const techLogos = [
+    angular,
+    bootstrap,
+    css3,
+    html5,
+    javascript,
+    jquery,
+    materialize,
+    node,
+    react,
+    redux,
+    sass,
+    typescript,
+  ];
   return (
-    <div className="skillsPage">
-      <div className="title">Skills</div>
-      <div className="subtitle">Over 3 years of full stack experience using these technologies.</div>
-      <ul className="techList">
+    <div className="Skills--container">
+      <div className="Skills--title">Skills</div>
+      <div className="Skills--subtitle">
+        Over 3 years of full stack experience using these technologies.
+      </div>
+      <ul className="Skills--techList">
         {techNames.map((name, i) => (
           <li key={`${i} ${name}`} title={name}>
             <img src={techLogos[i]} alt={name} />
