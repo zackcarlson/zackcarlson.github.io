@@ -22,8 +22,8 @@ export const Skills = () => {
       <div className="subtitle">Over 3 years of full stack experience using these technologies.</div>
       <ul className="techList">
         {techNames.map((name, i) => (
-          <li key={`${i} ${name}`}>
-            <img src={techLogos[i]} alt={name} title={name} />
+          <li key={`${i} ${name}`} title={name}>
+            <img src={techLogos[i]} alt={name} />
           </li>
         ))}
       </ul>
