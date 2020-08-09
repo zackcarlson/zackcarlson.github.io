@@ -1,0 +1,429 @@
+.Nav--container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  padding: 0.4rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s, box-shadow 0.6s;
+  z-index: 10000000;
+}
+
+.--hidden {
+  top: -100px;
+}
+
+.--boxshadow {
+  -webkit-box-shadow: 0px 1px 4px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 1px 4px rgb(0, 0, 0);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0);
+}
+
+.Nav--links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav--links > a {
+  text-decoration: none !important;
+}
+
+.Nav--linkItem {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+  transition: color 250ms ease-in-out;
+}
+
+.Nav--linkItem:hover {
+  color: hsl(50, 58%, 78%);
+}
+
+.Nav--logo {
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.resume {
+  color: #6b806b;
+  border: 2px solid #6b806b;
+  /* background-color: white; */
+  border-radius: 3px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -webkit-transition: color 250ms ease-in-out,
+    background-color 250ms ease-in-out, border 250ms ease-in-out;
+  -moz-transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
+  -o-transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+    border 250ms ease-in-out;
+}
+
+.resume:hover {
+  color: white;
+  background-color: hsl(50, 58%, 78%);
+  border: 2px solid #c2b889;
+}
+
+svg#zack-logo path {
+  transition: 250ms ease-in-out;
+}
+svg#zack-logo:hover > path {
+  fill: #e7dca5;
+}
+
+.Landing--container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.Landing--intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.Landing--intro > h1 {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  color: #e7dca5;
+}
+
+.Landing--intro > h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  text-transform: lowercase;
+  color: white;
+}
+
+p.Landing--details {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #848484;
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+.Landing--cartoon-wrapper {
+  display: flex;
+  padding: 3rem;
+}
+
+.Landing--cartoon {
+  width: 100%;
+}
+
+.Landing--icons {
+  margin-top: 2rem;
+}
+
+.Landing--icon > svg {
+  fill: #93af93;
+  transition: 250ms ease-in-out;
+}
+
+.Landing--icon > svg:hover {
+  fill: hsl(50, 58%, 78%);
+}
+
+.Landing--icon {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1281px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Landing--intro,
+  .Landing--cartoon-wrapper {
+    width: 50%;
+  }
+  .Landing--intro > h1 {
+    font-size: 2.5rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Landing--intro > h1 {
+    font-size: 3.4rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Landing--intro > h1 {
+    font-size: 3.2rem;
+  }
+
+  .Landing--intro > h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.Skills--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Skills--title {
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 6rem 0 1rem 0;
+  line-height: 34px;
+  color: #ddd29d;
+}
+
+.Skills--subtitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+.Skills--techList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  grid-gap: 1rem;
+}
+
+.Skills--tech-wrapper {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #6b806b;
+  background-color: #2b2b2b;
+}
+
+.Projects--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.Projects--title {
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  color: #ddd29d;
+  font-size: 2.5rem;
+  margin: 6rem 0 1rem 0;
+}
+
+.Projects--subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
+
+.Projects--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr); */
+}
+
+.Projects--techList {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #93af93;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr); */
+  margin-top: 2em;
+  padding: 1rem;
+}
+
+.Projects--techList--item {
+  background: #000000;
+  border-radius: 2px;
+  margin: 0.25em;
+  padding: 0.5em;
+}
+
+.Projects--listTitle {
+  font-weight: 600;
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.Projects--detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  background: #2b2b2b;
+  margin: 1em;
+  border-radius: 11px;
+  width: 500px;
+}
+
+.Projects--linksWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+a {
+  cursor: pointer;
+  margin: 0 0.5em;
+}
+
+.Projects--screenshotWrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.Projects--projectName {
+  width: 100%;
+  height: 290px;
+  display: flex;
+}
+
+.Projects--projectName.google:hover:before {
+  background: url(/googlekeep.507aacee.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.Projects--projectName.volunteer:hover:before {
+  background: url(/volunteerrocks.0b1b1982.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.Projects--projectName.oneMan:hover:before {
+  background: url(/oneman.7206de71.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.Projects--projectName.google {
+  background: url(/gkeepgray.c22aac98.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.Projects--projectName.volunteer {
+  background: url(/volunteerrocksgray.f74794e0.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.Projects--projectName.oneMan {
+  background: url(/onemangray.5cf69b20.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.Projects--projectName:before {
+  content: "";
+  width: 100%;
+  opacity: 0.5;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+@media screen and (max-width: 550px) {
+  .Projects--detailsWrapper {
+    width: 100%;
+  }
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App--container {
+  background-color: rgb(56, 56, 56);
+}
+
+
+/*# sourceMappingURL=/src.7ed060e2.css.map */
