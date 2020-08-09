@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/zackcarlson/zackcarlson.github.io/issues"
   },
-  "homepage": "https://github.com/zackcarlson/zackcarlson.github.io/",
+  "homepage": "https://github.com/zackcarlson/zackcarlson.github.io",
   "dependencies": {
     "classnames": "^2.2.6",
     "prettier": "^2.0.5",
