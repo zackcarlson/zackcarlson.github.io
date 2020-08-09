@@ -57,7 +57,7 @@ export const Skills = () => {
     <Typescript key="Typescript11" size="70" />,
   ];
   return (
-    <div className="Skills--container">
+    <div className="Skills--container" id="skills-section">
       <div className="Skills--title">Skills</div>
       <div className="Skills--subtitle">
         Over 3 years of full stack experience using these technologies.
@@ -70,8 +70,6 @@ export const Skills = () => {
             className="Skills--tech-wrapper"
           >
             <IconStyleWrapper>{techLogos[i]}</IconStyleWrapper>
-
-            {/* <img src={techLogos[i]} alt={name} className="Skills--tech" /> */}
           </li>
         ))}
       </ul>

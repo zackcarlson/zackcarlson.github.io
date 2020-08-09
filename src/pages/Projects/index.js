@@ -63,7 +63,7 @@ export const Projects = () => {
     },
   ];
   return (
-    <div className="Projects--container">
+    <div className="Projects--container" id="projects-section">
       <div className="Projects--title">Applications</div>
       <div className="Projects--subtitle">
         Check out some featured projects I’ve built over the years.

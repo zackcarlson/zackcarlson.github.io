@@ -30,11 +30,20 @@
   align-items: center;
 }
 
+.Nav--links > a {
+  text-decoration: none !important;
+}
+
 .Nav--linkItem {
   padding: 0.5rem;
   font-size: 0.9rem;
   cursor: pointer;
   color: white;
+  transition: color 250ms ease-in-out;
+}
+
+.Nav--linkItem:hover {
+  color: hsl(50, 58%, 78%);
 }
 
 .Nav--logo {
