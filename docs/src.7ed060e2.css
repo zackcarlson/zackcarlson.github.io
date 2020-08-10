@@ -191,6 +191,10 @@ p.Landing--details {
   .Landing--intro > h2 {
     font-size: 1.9rem;
   }
+
+  .Landing--cartoon-wrapper {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -203,8 +207,7 @@ p.Landing--details {
   }
 
   .Landing--cartoon-wrapper {
-    padding: 0.5rem;
-    display: block;
+    display: none;
   }
 
   .Landing--intro {
