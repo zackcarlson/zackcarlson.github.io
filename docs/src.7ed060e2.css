@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #232323;
+  background-color: #191919;
   padding: 0.4rem 1rem;
   font-family: "Open Sans", sans-serif;
   text-transform: lowercase;
@@ -207,7 +207,7 @@ p.Landing--details {
   }
 
   .Landing--intro {
-    padding: 3rem 1rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -445,7 +445,7 @@ html {
 }
 
 .App--container {
-  background-color: #232323;
+  background-color: #191919;
 }
 
 
