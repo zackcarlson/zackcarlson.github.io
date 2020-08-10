@@ -204,10 +204,13 @@ p.Landing--details {
 
   .Landing--cartoon-wrapper {
     padding: 0.5rem;
+    display: block;
   }
 
   .Landing--intro {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 1rem;
+    min-height: auto;
+    display: block;
   }
 }
 
