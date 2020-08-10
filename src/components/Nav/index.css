@@ -55,16 +55,12 @@ a:focus {
 
 .Nav--logo {
   cursor: pointer;
-  margin-left: 0.5rem;
 }
 
 .resume {
   color: #6b806b;
   border: 2px solid #6b806b;
-  /* background-color: white; */
   border-radius: 3px;
-  margin-left: 1rem;
-  margin-right: 1rem;
   padding: 0.75rem 1rem;
   -webkit-transition: color 250ms ease-in-out,
     background-color 250ms ease-in-out, border 250ms ease-in-out;
