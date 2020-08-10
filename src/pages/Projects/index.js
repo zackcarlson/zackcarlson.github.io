@@ -5,6 +5,8 @@ import liveIcon from "../../assets/images/liveIcon.svg";
 import googleKeep from "../../assets/images/googlekeep.png";
 import volunteer from "../../assets/images/volunteerrocks.png";
 import oneMan from "../../assets/images/oneman.png";
+import { FaGithub } from "react-icons/fa";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export const Projects = () => {
   const projects = [
@@ -25,6 +27,7 @@ export const Projects = () => {
       repoLink: "https://github.com/zackcarlson/google-keep-clone?",
       imageSrc: googleKeep,
       classname: "google",
+      description: "A customizable notetaking app modeled after Google Keep.",
     },
     {
       name: "Volunteer Rocks",
@@ -42,6 +45,8 @@ export const Projects = () => {
       repoLink: "https://github.com/zackcarlson/volunteer-rocks?",
       imageSrc: volunteer,
       classname: "volunteer",
+      description:
+        "An application that locates volunteer opportunities near you.",
     },
     {
       name: "One Man's Treasure",
@@ -60,31 +65,24 @@ export const Projects = () => {
       repoLink: "https://github.com/zackcarlson/one-mans-treasure?",
       imageSrc: oneMan,
       classname: "oneMan",
+      description:
+        "An application for sellers to give away or trade away unwanted items.",
     },
   ];
   return (
     <div className="Projects--container" id="projects-section">
-      <div className="Projects--title">Applications</div>
+      <div className="Projects--title">Projects</div>
       <div className="Projects--subtitle">
         Check out some featured projects I’ve built over the years.
       </div>
       <ul className="Projects--list">
         {projects &&
           projects.map(
-            (
-              { name, techList, liveLink, repoLink, imageSrc, classname },
-              i
-            ) => (
+            ({ name, techList, liveLink, repoLink, description }, i) => (
               <li key={`${i} ${name}`} title={name}>
                 <div className="Projects--detailsWrapper">
                   <div className="Projects--listTitle">{name}</div>
-                  <a
-                    className="Projects--screenshotWrapper"
-                    href={liveLink}
-                    target="_blank"
-                  >
-                    <div className={`Projects--projectName ${classname}`}></div>
-                  </a>
+                  <div className="Projects--listDescription">{description}</div>
                   <ul className="Projects--techList">
                     {techList &&
                       techList.map((tech, i) => (
@@ -97,11 +95,11 @@ export const Projects = () => {
                       ))}
                   </ul>
                   <div className="Projects--linksWrapper">
-                    <a href={liveLink} target="_blank">
-                      <img src={liveIcon} alt="live" />
+                    <a href={liveLink} target="_blank" rel="noreferrer">
+                      <BsBoxArrowUpRight size="25" style={{ fill: "white" }} />
                     </a>
-                    <a href={repoLink} target="_blank">
-                      <img src={repoIcon} alt="repo" />
+                    <a href={repoLink} target="_blank" rel="noreferrer">
+                      <FaGithub size="25" style={{ fill: "white" }} />
                     </a>
                   </div>
                 </div>

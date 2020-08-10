@@ -105,10 +105,18 @@ p.Landing--details {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Landing--intro > h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
   }
 
   .Landing--intro > h2 {
     font-size: 1.7rem;
+  }
+
+  .Landing--cartoon-wrapper {
+    padding: 0.5rem;
+  }
+
+  .Landing--intro {
+    padding: 3rem 1rem;
   }
 }
