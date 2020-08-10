@@ -11,6 +11,23 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 export const Projects = () => {
   const projects = [
     {
+      name: "Datalabels",
+      techList: [
+        "HTML",
+        "SCSS",
+        "React",
+        "JavaScript",
+        "React Router",
+        "React Context",
+        "Bootstrap",
+        "Material UI",
+      ],
+      liveLink: "",
+      repoLink: "",
+      description:
+        "An application for advertising agencies to share and consume targeted ad data points.",
+    },
+    {
       name: "Google Keep Clone",
       techList: [
         "HTML",
@@ -95,12 +112,19 @@ export const Projects = () => {
                       ))}
                   </ul>
                   <div className="Projects--linksWrapper">
-                    <a href={liveLink} target="_blank" rel="noreferrer">
-                      <BsBoxArrowUpRight size="25" style={{ fill: "white" }} />
-                    </a>
-                    <a href={repoLink} target="_blank" rel="noreferrer">
-                      <FaGithub size="25" style={{ fill: "white" }} />
-                    </a>
+                    {liveLink && (
+                      <a href={liveLink} target="_blank" rel="noreferrer">
+                        <BsBoxArrowUpRight
+                          size="25"
+                          style={{ fill: "white" }}
+                        />
+                      </a>
+                    )}
+                    {repoLink && (
+                      <a href={repoLink} target="_blank" rel="noreferrer">
+                        <FaGithub size="25" style={{ fill: "white" }} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </li>
