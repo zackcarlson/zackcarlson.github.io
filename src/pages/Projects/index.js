@@ -11,6 +11,23 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 export const Projects = () => {
   const projects = [
     {
+      name: "Actour",
+      techList: [
+        "Figma",
+        "HTML",
+        "CSS",
+        "React",
+        "JavaScript",
+        "React Router",
+        "GraphQL",
+        "Apollo",
+      ],
+      liveLink: "https://actour.herokuapp.com/",
+      repoLink: "https://github.com/zackcarlson/actour",
+      description:
+        "A website dedicated to searching for your favorite screen actors.",
+    },
+    {
       name: "Datalabels",
       techList: [
         "HTML",
