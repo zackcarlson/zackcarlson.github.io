@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 2.6rem;
   text-transform: lowercase;
-  color: white;
+  color: black;
 }
 
 p.Landing--details {
@@ -33,7 +33,7 @@ p.Landing--details {
   font-weight: 300;
   margin-top: 2rem;
   font-size: 1.3rem;
-  color: #848484;
+  color: black;
   font-family: monospace;
   line-height: 1.6;
 }
